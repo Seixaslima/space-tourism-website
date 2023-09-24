@@ -61,6 +61,7 @@
   font-size: 20px;
   letter-spacing: 1.25px;
   font-family: "Bellefair", serif;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
