@@ -1,9 +1,3 @@
-import Image from 'next/image'
+import Index from "@/pages/index";
 
-export default function Home() {
-  return (
-    <main >
-      <h1>Hello World</h1>
-    </main>
-  )
-}
+export default Index

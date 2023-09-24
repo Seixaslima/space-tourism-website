@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+
+.main {
+  background-image: url("/assets/backgroud/home/bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 64px;
+  padding-bottom: 48px;
+  display: flex;
+  gap: 81px;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.titleContainer {
+  margin: 48px 24px 0px;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.subTitle {
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+.text {
+  color: #d0d6f9;
+  font-family: Barlow;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+.buttonContainer button {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: none;
+  border-radius: 100%;
+  text-transform: uppercase;
+  color: #0b0d17;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1.25px;
+  font-family: "Bellefair", serif;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    background-image: url("/assets/backgroud/home/bg-tablet.jpg");
+    padding-top: 96px;
+    padding-bottom: 90px;
+    gap: 150px;
+  }
+
+  .titleContainer {
+    margin: 106px 159px 0px;
+  }
+
+  .title {
+    font-size: 150px;
+    line-height: 150px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .subTitle {
+    font-size: 20px;
+    letter-spacing: 3.375px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .buttonContainer button {
+    width: 242px;
+    height: 242px;
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    background-image: url("/assets/backgroud/home/bg-desktop.jpg");
+    padding-top: 136px;
+    padding-bottom: 131px;
+    padding-inline: 165px;
+    flex-direction: row;
+    gap: 386px;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .titleContainer {
+    margin: 0;
+    text-align: left;
+  }
+
+  .subTitle {
+    font-size: 28px;
+    letter-spacing: 4.725px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .buttonContainer button {
+    width: 274px;
+    height: 274px;
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+}

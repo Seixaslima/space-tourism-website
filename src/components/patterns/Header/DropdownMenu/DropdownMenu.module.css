@@ -1,0 +1,42 @@
+.dropdownMenu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.dropdownMenu img {
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+
+.open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  width: 254px;
+  height: 100vh;
+  pointer-events: none;
+  padding-top: 118px;
+}
+
+.nav {
+  pointer-events: all;
+  z-index: 2;
+}
+
+.nav ul {
+  margin-left: 32px;
+}
+
+.nav ul li {
+  margin-bottom: 32px;
+}
+
+.close {
+  background: none;
+  display: none;
+}

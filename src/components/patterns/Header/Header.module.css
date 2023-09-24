@@ -1,0 +1,67 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100vw;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.dropdownMenu {
+  display: block;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdownMenu {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .menu_list {
+    display: flex;
+    gap: 37px;
+    padding-inline: 46px;
+    background-color: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(40.774227142333984px);
+    backdrop-filter: blur(40.774227142333984px);
+  }
+
+  .menu_list li {
+    padding-block: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Header {
+    margin-top: 40px;
+  }
+
+  .menu_list {
+    display: flex;
+    gap: 50px;
+    padding-inline: 123px 167px;
+    background-color: rgba(255, 255, 255, 0.04);
+  }
+
+  .menu_list li {
+    padding-block: 40px;
+  }
+}
