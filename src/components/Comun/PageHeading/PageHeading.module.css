@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+
+.PageHeading {
+  margin-top: 24px;
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.stage {
+  font-weight: 700;
+  opacity: 0.25;
+  margin-right: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .PageHeading {
+    margin-top: 40px;
+    margin-left: 98px;
+    font-size: 20px;
+    letter-spacing: 3.375px;
+    text-align: left;
+  }
+
+  .stage {
+    margin-left: 19px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .PageHeading {
+    margin-top: 76px;
+    margin-left: 166px;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+  }
+
+  .stage {
+    margin-left: 28px;
+  }
+}

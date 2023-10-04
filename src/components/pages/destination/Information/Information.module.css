@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+.Information {
+  margin-top: 32px;
+  width: 216px;
+}
+
+.title {
+  color: #d0d6f9;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.362px;
+  text-transform: uppercase;
+}
+
+.text {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .Information {
+    margin-top: 28px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .title {
+    text-align: left;
+  }
+
+  .text {
+    text-align: left;
+  }
+}

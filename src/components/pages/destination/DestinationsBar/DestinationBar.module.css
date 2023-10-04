@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+
+.DestinationBar {
+  display: block;
+}
+
+.DestinationList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+}
+
+.DestinationLink {
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.362px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.selected {
+  color: #fff;
+  border-bottom: 3px solid white;
+}
+
+@media screen and (min-width: 768px) {
+  .DestinationList {
+    gap: 35px;
+  }
+
+  .DestinationLink {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    padding-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .DestinationList {
+    justify-content: flex-start;
+    gap: 35px;
+  }
+
+  .DestinationLink {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    padding-bottom: 15px;
+  }
+}
