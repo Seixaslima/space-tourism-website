@@ -48,4 +48,8 @@
     letter-spacing: 2.7px;
     padding-bottom: 15px;
   }
+
+  .notSelected:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  }
 }

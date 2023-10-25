@@ -16,7 +16,7 @@ export default function LinksMenu() {
   return (
     menus.map((menu, index) => {
       return (
-        <li key={index} className={(path.split("/")[1] === menu.path.split("/")[1] ? styles.active : "")}>
+        <li key={index} className={path.split("/")[1] === menu.path.split("/")[1] ? styles.active : styles.linkBox}>
           <Link href={menu.path} className={`${styles.link}`}>
             <p className={styles.index}>0{index}</p>
             <p>{menu.name}</p>

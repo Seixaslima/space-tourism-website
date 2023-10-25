@@ -5,7 +5,7 @@ export default function TechnologyMarker({ id }: { id: string }) {
 
   const pages = ["1", "2", "3"]
   return (
-    <div className={styles.technologyMarker}>
+    <div>
       <ul className={styles.linkList}>
         {
           pages.map(page => {

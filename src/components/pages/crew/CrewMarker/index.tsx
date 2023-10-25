@@ -12,7 +12,7 @@ export function CrewMarker({ id }: { id: string }) {
           return (
             <li>
               <Link
-                className={`${styles.link}  ${id === page ? styles.active : ""}`}
+                className={`${styles.link}  ${id === page ? styles.active : styles.inactive}`}
                 href={`./${page}`}></Link>
             </li>
           )

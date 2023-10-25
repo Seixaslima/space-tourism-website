@@ -17,7 +17,7 @@ export default async function DestinationBar({ selected }: IDestinationBar) {
           return (
             <li
               key={destin.id}
-              className={`${styles.DestinationLink} ${(destin.id === Number(selected)) ? styles.selected : ""}`}
+              className={`${styles.DestinationLink} ${(destin.id === Number(selected)) ? styles.selected : styles.notSelected}`}
             >
               <Link href={`/destination/${destin.id}`}>{destin.name}</Link>
             </li>
