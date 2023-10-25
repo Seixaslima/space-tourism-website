@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
+
 .Technology {
   background-image: url("/assets/backgroud/technology/bg-mobile.jpg");
   background-repeat: no-repeat;
@@ -7,6 +9,56 @@
   padding-bottom: 48px;
   box-sizing: border-box;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.images {
+  order: 1;
+}
+.imagemLandscape {
+  max-width: 100vw;
+  margin-top: 16px;
+}
+
+.imagemPortrait {
+  display: none;
+}
+
+.marker {
+  order: 2;
+  margin-top: 34px;
+}
+
+.info {
+  order: 3;
+  margin-top: 26px;
+  text-align: center;
+  margin-inline: 24px;
+}
+
+.terminology {
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.362px;
+  text-transform: uppercase;
+}
+
+.name {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 9px;
+}
+
+.description {
+  color: #d0d6f9;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 16px;
+}
 
 @media screen and (min-width: 768px) {
   .Technology {
@@ -14,11 +66,97 @@
     padding-top: 96px;
     padding-bottom: 90px;
   }
+
+  .imagemLandscape {
+    max-width: 100vw;
+    margin-top: 60px;
+  }
+
+  .imagemPortrait {
+    display: none;
+  }
+
+  .marker {
+    margin-top: 56px;
+  }
+
+  .info {
+    margin-top: 44px;
+    text-align: center;
+    margin-inline: 155px;
+  }
+
+  .terminology {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  .name {
+    font-size: 40px;
+    margin-top: 16px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .Technology {
     background-image: url("/assets/backgroud/technology/bg-desktop.jpg");
     padding-top: 136px;
+  }
+
+  .container {
+    flex-direction: row;
+    margin-left: 165px;
+  }
+  .images {
+    order: 3;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: 26px;
+  }
+
+  .imagemLandscape {
+    display: none;
+  }
+
+  .imagemPortrait {
+    display: block;
+    width: 515px;
+    height: 527px;
+    margin-right: 0px;
+  }
+
+  .marker {
+    order: 1;
+    margin-top: 137px;
+  }
+
+  .info {
+    order: 2;
+    margin-top: 137px;
+    text-align: left;
+    margin-inline: 0;
+    margin-left: 80px;
+    width: 470px;
+  }
+
+  .terminology {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  .name {
+    font-size: 56px;
+    margin-top: 11px;
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 17px;
   }
 }

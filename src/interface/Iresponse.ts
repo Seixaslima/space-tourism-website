@@ -20,3 +20,13 @@ export interface IResponseCrew {
   "role": string
   "bio": string
 }
+
+export interface IResponseTechnology {
+  "id": number,
+  "name": string
+  "images": {
+      "portrait": string,
+      "landscape": string
+  },
+  "description": string
+}
