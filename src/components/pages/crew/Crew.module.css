@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
 .Crew {
   background-image: url("/assets/backgroud/crew/bg-mobile.jpg");
   background-repeat: no-repeat;
@@ -8,11 +10,103 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagemContainer {
+  margin: 32px 24px 0;
+  border-bottom: 1px solid #383b4b;
+}
+
+.imagem {
+  width: 300px;
+  height: 222px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.imagem img {
+  object-fit: contain;
+}
+
+.info {
+  text-align: center;
+  margin: 32px 24px 0;
+}
+
+.role {
+  color: #fff;
+  opacity: 0.4951;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.name {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.bio {
+  margin-top: 16px;
+  color: #d0d6f9;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  line-height: 25px; /* 166.667% */
+}
+
 @media screen and (min-width: 768px) {
   .Crew {
     background-image: url("/assets/backgroud/crew/bg-tablet.jpg");
     padding-top: 96px;
-    padding-bottom: 90px;
+    padding-bottom: 0;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+  .item {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column-reverse;
+  }
+
+  .imagemContainer {
+    margin: 40px 0 0 0;
+    border: none;
+  }
+
+  .imagem {
+    width: 540px;
+    height: 530px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .info {
+    text-align: center;
+    margin: 60px 116px 0;
+  }
+
+  .role {
+    font-size: 24px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .bio {
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 
@@ -20,5 +114,50 @@
   .Crew {
     background-image: url("/assets/backgroud/crew/bg-desktop.jpg");
     padding-top: 136px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .imagemContainer {
+    margin: 0;
+  }
+
+  .imagem {
+    width: 615px;
+    height: 610px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .info {
+    text-align: left;
+    margin: 0;
+    margin-top: 154px;
+    margin-left: 165px;
+  }
+
+  .role {
+    opacity: 0.5042;
+    font-size: 32px;
+  }
+
+  .name {
+    margin-top: 15px;
+    font-size: 56px;
+  }
+
+  .bio {
+    margin-top: 27px;
+    font-size: 18px;
+    line-height: 32px; /* 166.667% */
   }
 }

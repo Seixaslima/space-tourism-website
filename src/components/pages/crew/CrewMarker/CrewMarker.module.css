@@ -1,0 +1,45 @@
+.crewMarker {
+  margin-inline: auto;
+}
+
+.linkList {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  gap: 16px;
+}
+
+.link {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.174363;
+}
+
+.active {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .crewMarker {
+    margin-inline: 167px 0;
+    margin-bottom: 94px;
+    margin-top: auto;
+  }
+
+  .linkList {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .link {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+  }
+}

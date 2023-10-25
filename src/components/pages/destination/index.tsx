@@ -4,27 +4,11 @@ import Image from "next/image"
 import DestinationBar from "./DestinationsBar"
 import { IResponseDestination } from "@/interface/Iresponse"
 import Information from "./Information"
+import { getData } from "@/web"
 
 
 interface IDestination {
   params: { id: string }
-}
-
-
-
-async function getData(id: string): Promise<IResponseDestination> {
-  const baseURL = process.env.DB_URL
-  const fetchURL = baseURL + "destinations/" + id
-  const res = await fetch(fetchURL)
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
-
-  if (!res.ok) {
-    //  This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data')
-  }
-
-  return res.json()
 }
 
 export async function generateStaticParams() {
@@ -33,7 +17,7 @@ export async function generateStaticParams() {
 
 
 export default async function Destination({ params }: IDestination) {
-  const data = await getData(params.id)
+  const data = await getData<IResponseDestination>(params.id, "destinations")
   const imgURL = data.images.webp.replace("./", "/")
 
 

@@ -12,7 +12,7 @@ export default function Index() {
       </div>
       <div className={styles.buttonContainer}>
 
-        <Link href="/destination">
+        <Link href="/destination/1">
           <button type="button" >Explore</button>
         </Link>
 
