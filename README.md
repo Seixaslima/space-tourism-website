@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Seixaslima/space-tourism-website)
-- Live Site URL: [Add live site URL here](https://space-tourism-website-fd8umsm16-lucasseixaslima2vercel-gmailcom.vercel.app/)
+- Solution URL: [GITHUB](https://github.com/Seixaslima/space-tourism-website)
+- Live Site URL: [Live site](https://space-tourism-website-fd8umsm16-lucasseixaslima2vercel-gmailcom.vercel.app/)
 
 ## My process
 

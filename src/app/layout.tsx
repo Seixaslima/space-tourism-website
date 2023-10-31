@@ -4,8 +4,15 @@ import { Bellefair } from "next/font/google";
 import Header from '@/components/patterns/Header';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://space-tourism-website-eight-omega.vercel.app/'),
   title: 'Frontend Mentor | Space tourism website',
   description: 'Frontend Mentor | Space tourism website',
+  openGraph: {
+    images: '/opengraph-image.jpeg',
+  },
+  icons: '/favicon.ico',
+  
+
 
 }
 
