@@ -9,10 +9,16 @@ export const metadata: Metadata = {
   description: 'Frontend Mentor | Space tourism website',
   openGraph: {
     images: '/opengraph-image.jpeg',
+    title: 'Frontend Mentor | Space tourism website',
+    description: 'Frontend Mentor | Space tourism website',
+    url: 'https://space-tourism-website-eight-omega.vercel.app/'
+  },
+  twitter: {
+    images: '/opengraph-image.jpeg',
+    title: 'Frontend Mentor | Space tourism website',
+    description: 'Frontend Mentor | Space tourism website',
   },
   icons: '/favicon.ico',
-  
-
 
 }
 
